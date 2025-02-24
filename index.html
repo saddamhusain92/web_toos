@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Text Tools</h2>
+            <ul>
+                <li><a href="#" onclick="convertToUppercase()">Uppercase</a></li>
+                <li><a href="#" onclick="convertToLowercase()">Lowercase</a></li>
+                <li><a href="#" onclick="reverseText()">Reverse Text</a></li>
+                <li><a href="#" onclick="countWords()">Count Words</a></li>
+                <li><a href="#" onclick="countCharacters()">Count Characters</a></li>
+                <li><a href="#" onclick="removeSpaces()">Remove Spaces</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Workspace -->
+        <div class="workspace">
+            <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            <div class="output">
+                <h3>Output:</h3>
+                <p id="outputText"></p>
+            </div>
+            <div class="actions">
+                <button onclick="copyOutput()">Copy Output</button>
+                <button onclick="clearText()">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
