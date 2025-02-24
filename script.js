@@ -8,6 +8,14 @@ function convertToLowercase() {
     const inputText = document.getElementById('inputText').value;
     document.getElementById('outputText').innerText = inputText.toLowerCase();
 }
+function capitalizeText() {
+    const inputText = document.getElementById('inputText').value;
+    const capitalizedText = inputText
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+    document.getElementById('outputText').innerText = capitalizedText;
+}
 
 function reverseText() {
     const inputText = document.getElementById('inputText').value;
